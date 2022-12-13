@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background: url( ../img/header-bg.jpg );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+    
+}
+.overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background: rgba(0,0,0,0.6);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginBox{
+    width:260px;
+    height:380px;
+    background: #fff;
+    position:relative;
+    overflow: hidden;
+}
+.loginBox::before {
+	position: absolute;
+	content: '';
+	width: 130px;
+	height: 106px;
+	background: url(../img/blob-haikei.png);
+	background-position: top;
+	background-size: 150px;
+	background-repeat: no-repeat;
+	transform-origin: bottom right;
+	right: -58px;
+	top: 8px;
+	rotate: 20deg;
+}
+.loginBox h2 {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #BB004B;
+}
+form {
+	width: 75%;
+	margin: auto;
+	padding-top: 20px;
+	box-sizing: content-box;
+}
+form input, button {
+	width: 100%;
+	margin-bottom: 10px;
+	height: 30px;
+	padding: 0 5px;
+    color:#BB004B;
+    font-weight: 600;
+}
+form input {
+  border:  1px solid #BB004B;
+  margin-bottom: 20px;
+}
+form input:focus{
+    outline:none;
+}
+form button {
+	border: none;
+	color: #fff;
+	background: #BB004B;
+	border-radius: 5px;
+	font-weight: 600;
+	cursor: pointer;
+	letter-spacing: 0.03rem;
+    transition: all 0.1s ease-in;
+    
+}
+.login:hover{
+    background: #710631;
+    letter-spacing: 0.2rem;
+}
+form i {
+	margin-right: 16px;
+	font-size: 17px;
+}
+form .fb, .google{
+    background:  #0b2b70;
+    text-align:center;
+    font-size: 13px;
+    letter-spacing: 0rem;
+}
+.google i{
+    margin-left: -12px;
+}
+form .fb:hover{
+    background: #3b5998;
+    letter-spacing: 0.03rem;
+}
+form .google:hover{
+    background: #982219;
+    letter-spacing: 0.03rem;
+}
+.fa-facebook {
+    color: #fff;
+}
+.google {
+    background: #FF3E30;
+}
+.loginBox h6 {
+	display: inline-block;
+	padding: 10px;
+	margin-left: 20px;
+	font-size: 12px;
+}
+.loginBox a {
+	color: #BB004B;
+	font-weight: 600;
+	font-size: 14px;
+}
+.loginBox a:hover{
+    color:#7c0937;
+}
+
+
+
+
+
+@media (max-width:576px) {
+    .loginBox {
+        width: 316px;
+        height: 432px;
+    }
+    form {
+        width: 82%;
+    }
+    form input, button {
+        height: 42px;
+    }
+    form input {
+        font-size: 17px;
+    }
+    form button {
+        font-size: 17px;
+    }
+    form .fb, .google {
+        font-size:17px;
+    }
+    .google i {
+        margin-left: -18px;
+    }
+    .loginBox h6 {
+        margin-left: 30px;
+        font-size: 15px;
+    }
+    .loginBox a {
+        color: #BB004B;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    form i {
+        font-size: 25px;
+    }
+    
+}
